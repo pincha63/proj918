@@ -20,3 +20,5 @@ gem "slim"
 gem "sassc"
 ### rack-unreloader FTW
 gem 'rack-unreloader' 
+gem 'pg'
+gem 'sequel'

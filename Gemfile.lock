@@ -4,6 +4,7 @@ GEM
     erubis (2.7.0)
     ffi (1.15.4-x64-mingw32)
     nio4r (2.5.8)
+    pg (1.2.3)
     puma (5.5.2)
       nio4r (~> 2.0)
     rack (2.2.3)
@@ -12,6 +13,7 @@ GEM
       rack
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
+    sequel (5.51.0)
     slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
@@ -23,10 +25,12 @@ PLATFORMS
 
 DEPENDENCIES
   erubis
+  pg
   puma
   rack-unreloader
   roda
   sassc
+  sequel
   slim
   tilt
 
