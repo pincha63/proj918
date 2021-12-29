@@ -9,6 +9,8 @@ class Myapp < Roda
     plugin :partials, views: 'views'
     plugin :head
     route do |r|
+        print "This is the value of r : "
+        p r
         r.assets
         r.public
         r.root do

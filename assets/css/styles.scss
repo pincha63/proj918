@@ -39,8 +39,8 @@ header h1 {
   }
   li.rite {
     float: right;
-	padding-left: $nav-padding-left;
-	padding-right: $nav-padding-right;
+  	padding-left: $nav-padding-left;
+	  padding-right: $nav-padding-right;
   }
   
   a {
@@ -49,9 +49,9 @@ header h1 {
     padding: 8px;
     background: $background;
     color: $color;
-    &:hover {
+/*    &:hover {
       background: darken($background, 20%);
-    }
+    }  */
   }
 
   li.tagel {
