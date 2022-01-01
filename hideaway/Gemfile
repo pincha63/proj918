@@ -10,8 +10,8 @@ gem "tilt"
 ### it also can be compiled, per https://github.com/rtomayko/tilt
 # Erubis is at 2.7.0 / # erb itself is at 2.2.0 as of Dec 2021
 gem "erubis"
-gem "slim"
-gem "sassc"
+### gem "slim"
+# gem "sassc"
 gem 'rack-unreloader' 
-gem 'pg'
-gem 'sequel'
+# gem 'pg'
+# gem 'sequel'
