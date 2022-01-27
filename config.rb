@@ -1,8 +1,8 @@
 # require "pp"
 class MyApp
     def call(env)
-        env.each { |key, value| puts "#{key} = #{value}" if key =~ /HTTP/i }
-        # will only print the k-v pairs where the key is a request header
+        env.each { |key, value| puts "#{key} = #{value}" if key =~ /[ab]/i }
+        # will only print the k-v pairs for some key values
 
         status  = 200
         headers = { "Content-Type" => "text/html" }
@@ -11,4 +11,6 @@ class MyApp
         p [status, headers, body]
     end
 end
-run MyApp.new
+t = MyApp.new
+t.call({:a => "A", :b => "B", :c => "C", :Sendro => "Asdf"})
+p t.class
